@@ -1,4 +1,4 @@
-# KEEBMONKEY IN14 v3 Walnut Nixie Clock Instructions 
+# KEEBMONKEY IN14 v3 Walnut Nixie Clock
 
 This repository contians a mirror and some basic English instructions for setting the time on the Keebmonkey IN14 Walnut Clock which was sold on Drop.com in 2024. 
 

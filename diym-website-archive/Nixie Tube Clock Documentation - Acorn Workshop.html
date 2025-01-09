@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<!-- saved from url=(0053)https://diym.vip/archives/%E8%AF%B4%E6%98%8E%E4%B9%A6 -->
+<html lang="en" class="light translated-ltr"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+    <title>Nixie Tube Clock Documentation - Acorn Workshop</title>
+    <link rel="stylesheet" href="./Nixie Tube Clock Documentation - Acorn Workshop_files/style.css">
+    <script src="./Nixie Tube Clock Documentation - Acorn Workshop_files/main.iife.js"></script>
+    
+    <script>
+      main.initColorScheme("system",true)
+    </script>
+  <meta name="description" content="在这里，我将更新所有辉光管时钟的说明书；可根据时钟的制作日期或版本，以及对应特点和功能，来判断下载对应的说明书。">
+<script async="" defer="" src="./Nixie Tube Clock Documentation - Acorn Workshop_files/halo-tracker.js" data-group="content.halo.run" data-plural="posts" data-name="3db2470f-b93a-44be-af31-c7385606b40b"></script>
+<link type="text/css" rel="stylesheet" charset="UTF-8" href="./Nixie Tube Clock Documentation - Acorn Workshop_files/m=el_main_css"></head>
+  <body class="bg-slate-50 dark:bg-slate-900">
+    <header id="header-menu" class="sticky top-0 z-10 flex h-14 bg-white py-3 shadow-sm transition-all dark:bg-gray-800 menu-sticky" x-data="{ open : false }">
+  <div class="container mx-auto flex h-full justify-between">
+    <div class="flex h-full items-center gap-6">
+      <div class="mr-2 h-full">
+        <a href="https://diym.vip/" class="inline-flex h-full items-center">
+          
+          <span id="site-title" class="text-lg font-medium text-gray-900 dark:text-slate-100"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Acorn Workshop</font></font></span>
+        </a>
+      </div>
+      <ul class="hidden items-center gap-8 sm:flex">
+        <li class="relative cursor-pointer text-sm font-medium transition-all" x-data="dropdown" @mouseenter="open()" @mouseleave="close()">
+          <a class="text-gray-600 hover:text-blue-600 dark:text-slate-50 dark:hover:text-gray-300" href="https://diym.vip/"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">front page</font></font></a>
+          
+        </li>
+        <li class="relative cursor-pointer text-sm font-medium transition-all" x-data="dropdown" @mouseenter="open()" @mouseleave="close()">
+          <a class="text-gray-600 hover:text-blue-600 dark:text-slate-50 dark:hover:text-gray-300" href="https://diym.vip/archives/%E8%AF%B4%E6%98%8E%E4%B9%A6" target="_self"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Nixie Tube Clock Documentation</font></font></a>
+          
+        </li>
+        <li class="relative cursor-pointer text-sm font-medium transition-all" x-data="dropdown" @mouseenter="open()" @mouseleave="close()">
+          <a class="text-gray-600 hover:text-blue-600 dark:text-slate-50 dark:hover:text-gray-300" href="https://diym.vip/archives/1406v2%E8%AF%B4%E6%98%8E%E4%B9%A6" target="_self"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Trendy Clock Instructions</font></font></a>
+          
+        </li>
+        <li class="relative cursor-pointer text-sm font-medium transition-all" x-data="dropdown" @mouseenter="open()" @mouseleave="close()">
+          <a class="text-gray-600 hover:text-blue-600 dark:text-slate-50 dark:hover:text-gray-300" href="https://diym.vip/archives/1.shi-yong-shuo-ming-fen-xiang" target="_self"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Fluorescent Screen Clock Instructions</font></font></a>
+          
+        </li>
+        <li class="relative cursor-pointer text-sm font-medium transition-all" x-data="dropdown" @mouseenter="open()" @mouseleave="close()">
+          <a class="text-gray-600 hover:text-blue-600 dark:text-slate-50 dark:hover:text-gray-300" href="https://diym.vip/categories/default" target="_self"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Default Category</font></font></a>
+          
+        </li>
+        <li class="relative cursor-pointer text-sm font-medium transition-all" x-data="dropdown" @mouseenter="open()" @mouseleave="close()">
+          <a class="text-gray-600 hover:text-blue-600 dark:text-slate-50 dark:hover:text-gray-300" href="https://diym.vip/about"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">about</font></font></a>
+          
+        </li>
+      </ul>
+    </div>
+    <div class="flex items-center">
+      <ul x-data="colorSchemeSwitcher" class="flex items-center gap-4">
+        <li class="sm:hidden" x-on:click="open = true">
+          <div class="i-tabler-menu-2 text-lg text-gray-600 hover:text-blue-600 dark:text-slate-100"></div>
+        </li>
+        <li x-data="dropdown" class="relative cursor-pointer transition-all" @mouseenter="open()" @mouseleave="close()">
+          <div class="cursor-pointer text-lg text-gray-600 transition-all hover:text-blue-600 dark:text-slate-100 i-gg-dark-mode" :class="colorScheme.icon" @click="[main.setColorScheme(nextColorScheme.value,true), currentValue = nextColorScheme.value]" :title="`当前主题：${colorScheme.label}，点击切换为：${nextColorScheme.label}`" title="Current theme: Follow the system, click to switch to: Dark"></div>
+        </li>
+        <!-- https://github.com/halo-sigs/plugin-search-widget -->
+        
+        <li x-data="dropdown" class="relative cursor-pointer transition-all" @mouseenter="open()" @mouseleave="close()">
+          <div>
+            <div class="h-5 w-5 text-gray-600 hover:text-blue-600 dark:text-slate-100">
+              <img class="h-5 w-5 rounded-full" src="./Nixie Tube Clock Documentation - Acorn Workshop_files/default-avatar.svg" alt="Anonymous User">
+            </div>
+            <ul @mouseenter="open()" @mouseleave="close()" x-show="show" x-transition:enter="transition ease-out duration-100" x-transition:enter-start="transform opacity-0 scale-95" x-transition:enter-end="transform opacity-100 scale-100" x-transition:leave="transition ease-in duration-75" x-transition:leave-start="transform opacity-100 scale-100" x-transition:leave-end="transform opacity-0 scale-95" class="absolute right-0 z-10 mt-2 w-40 divide-y divide-gray-50 overflow-hidden rounded bg-white shadow dark:divide-slate-600 dark:bg-slate-700" style="display: none;">
+              
+              
+              <li class="flex w-full items-center text-left text-sm hover:bg-gray-50 dark:hover:bg-slate-600">
+                <a class="h-full w-full truncate px-4 py-2 text-gray-600 hover:text-blue-600 dark:text-slate-50 dark:hover:text-gray-300" href="https://diym.vip/console/login"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+                  Log in
+                </font></font></a>
+              </li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div>
+    <div class="fixed inset-0 z-50 bg-gray-800/40 opacity-100 backdrop-blur-sm dark:bg-black/80" aria-hidden="true" x-show="open" x-transition:enter="ease-in-out duration-300" x-transition:enter-start="opacity-0" x-transition:enter-end="opacity-100" x-transition:leave="ease-in-out duration-300" x-transition:leave-start="opacity-100" x-transition:leave-end="opacity-0" style="display: none;"></div>
+    <div class="fixed inset-x-4 top-8 z-50 origin-top scale-100 rounded-lg bg-white p-4 dark:bg-slate-900" tabindex="-1" x-show="open" x-transition:enter="ease-out duration-200" x-transition:enter-start="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95" x-transition:enter-end="opacity-100 translate-y-0 sm:scale-100" x-transition:leave="ease-in duration-100" x-transition:leave-start="opacity-100 translate-y-0 sm:scale-100" x-transition:leave-end="opacity-0 translate-y-4 sm:translate-y-0 sm:scale-95" @click.outside="open = false" style="display: none;">
+      <div class="flex flex-row-reverse items-center justify-between">
+        <button class="i-tabler-x p-1 text-xl text-gray-600 dark:text-slate-300" type="button" tabindex="0" @click="open = false"></button>
+        <h2 class="text-sm font-medium text-gray-600 dark:text-slate-300"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">menu</font></font></h2>
+      </div>
+      <nav class="mt-6">
+        <ul class="-my-2 divide-y divide-gray-100 text-sm text-gray-800 dark:divide-slate-800 dark:text-slate-100">
+          <li>
+            <a class="flex items-center justify-between gap-1 py-2" href="https://diym.vip/">
+              <span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">front page</font></font></span>
+            </a>
+            
+          </li>
+          <li>
+            <a class="flex items-center justify-between gap-1 py-2" href="https://diym.vip/archives/%E8%AF%B4%E6%98%8E%E4%B9%A6" target="_self">
+              <span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Nixie Tube Clock Documentation</font></font></span>
+            </a>
+            
+          </li>
+          <li>
+            <a class="flex items-center justify-between gap-1 py-2" href="https://diym.vip/archives/1406v2%E8%AF%B4%E6%98%8E%E4%B9%A6" target="_self">
+              <span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Trendy Clock Instructions</font></font></span>
+            </a>
+            
+          </li>
+          <li>
+            <a class="flex items-center justify-between gap-1 py-2" href="https://diym.vip/archives/1.shi-yong-shuo-ming-fen-xiang" target="_self">
+              <span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Fluorescent Screen Clock Instructions</font></font></span>
+            </a>
+            
+          </li>
+          <li>
+            <a class="flex items-center justify-between gap-1 py-2" href="https://diym.vip/categories/default" target="_self">
+              <span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Default Category</font></font></span>
+            </a>
+            
+          </li>
+          <li>
+            <a class="flex items-center justify-between gap-1 py-2" href="https://diym.vip/about">
+              <span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">about</font></font></span>
+            </a>
+            
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</header>
+
+    
+      
+    <section>
+  
+  
+    <div class="relative">
+      <div class="before:z-1 relative h-96 bg-cover bg-center bg-no-repeat before:absolute before:inset-0 before:bg-black/40 before:content-[&#39;*&#39;]" style="background-image: url(/upload/IN1406Mv3.jpg)"></div>
+      <header class="pattern-header-text absolute top-1/2 mx-auto flex w-full flex-col items-center justify-center gap-3">
+        <h1 class="text-5xl text-white"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Nixie Tube Clock Documentation</font></font></h1>
+      </header>
+    </div>
+  
+</section>
+  
+    
+    
+    <section class="container mx-auto mt-6 grid grid-cols-4 gap-6 !-mt-20">
+      <div class="z-0 col-span-4 sm:col-span-3">
+        
+    <div x-data="postUpvote" class="rounded-xl bg-white p-4 dark:bg-slate-800">
+      <div class="flex items-center justify-between" x-data="{name:&#39;3db2470f-b93a-44be-af31-c7385606b40b&#39;}">
+        <div class="inline-flex items-center justify-start gap-2">
+          <a href="https://diym.vip/authors/adminxggf" title="LeShan">
+            
+          </a>
+          <div class="flex flex-col gap-0.5">
+            <a href="https://diym.vip/authors/adminxggf" title="LeShan" class="text-sm font-semibold text-gray-900 hover:text-gray-600 dark:text-slate-100 dark:hover:text-slate-200"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">LeShan</font></font></a>
+            <div class="flex items-center gap-2 text-xs font-light text-gray-600 dark:text-slate-100">
+              <span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Posted on 2023-09-05</font></font></span>
+              <span class="text-gray-300 dark:text-slate-200"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">/</font></font></span>
+              <span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">2117 Views</font></font></span>
+              <span class="text-gray-300 dark:text-slate-200"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">/</font></font></span>
+              <span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">0 Comments</font></font></span>
+              <span class="text-gray-300 dark:text-slate-200"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">/</font></font></span>
+              <span data-upvote-post-name="3db2470f-b93a-44be-af31-c7385606b40b"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">2 Likes</font></font></span>
+            </div>
+          </div>
+        </div>
+        <div class="inline-flex flex-row gap-1">
+          <div @click="handleUpvote(name)" class="cursor-pointer rounded-lg p-1 hover:bg-gray-100 dark:hover:bg-slate-600" :class="{&#39;bg-gray-100 dark:bg-slate-600&#39;:upvoted(name)}">
+            <div class="i-tabler-heart text-lg text-gray-600 hover:text-red-600" :class="{&#39;text-red-600 dark:text-red-400&#39;:upvoted(name)}"></div>
+          </div>
+          
+          
+        </div>
+      </div>
+      <h1 class="my-3 text-2xl font-medium dark:text-slate-50"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Nixie Tube Clock Documentation</font></font></h1>
+      <div class="flex gap-2">
+        
+      </div>
+      <article id="content" class="prose prose-base mt-4 !max-w-none break-words dark:prose-invert prose-pre:p-0"><h2 style="text-align: start" id="heading-1"><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">【V3】Clock Features</font></font></strong></h2><h3 id="heading-2"><img loading="lazy" src="./Nixie Tube Clock Documentation - Acorn Workshop_files/IN1406Mv3.jpg" width="100%" height="100%" style="display: inline-block"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Release time: August 2023</font></font></h3><p style="text-align: start"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">This clock is the third generation Nixie tube clock I made. Compared with the previous two generations, it supports MP3 high-definition voice, brightness adjustment, and Bluetooth control. The new supporting software is more intuitive and easy to use. It has a built-in new generation of sensor switch parameters with adjustable parameters, built-in gyroscope angle recognition, an ultra-thin body of &lt;10mm, and a more advanced 32-bit MCU.</font></font></p><p style="text-align: start"><u><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Applicable clock: IN1406Mv3, DGM0106Mv3, IN1606Mv3.0</font></font></u></p><h4 id="heading-3"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">The clock has the following features:</font></font></h4><ul><li><p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">1: Adopting the former Soviet Union DGM01/IN14 Nixie tube, DGM01 Nixie tube has a longer life and better display effect</font></font></p></li><li><p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">2: Bluetooth applet/Android APP is easy to operate, and one-click quick calibration time</font></font></p></li><li><p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">3: Built-in new generation induction switch, adjustable sensitivity, more stable performance</font></font></p></li><li><p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">4: Built-in gyroscope, can change the backlight and clock switch according to the tilt angle</font></font></p></li><li><p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">5: Brightness 10 levels of adjustment, manual automatic adjustment</font></font></p></li><li><p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">6: High-quality voice broadcast, you can change the music MP3 by yourself</font></font></p></li><li><p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">7: RGB multi-mode color backlight</font></font></p></li><li><p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">8: High-precision clock IC, accurate timekeeping</font></font></p></li><li><p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">9: Ultra-thin body, solid wood CNC one-piece molded shell</font></font></p></li><li><p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">10: Support PC client, can be equipped with PC Bluetooth wireless connection tool</font></font></p></li><li><p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">11: Support timer (with countdown) and anniversary date (with countdown days) display</font></font></p></li></ul><h4 id="heading-4"><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Information Sharing</font></font></strong></h4><ul><li><p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">1: </font></font><a target="_self" rel="noopener noreferrer nofollow" href="https://diym.vip/upload/IN1406Mv3.0%E6%97%B6%E9%92%9F%E6%84%9F%E5%BA%94%E7%89%88%E9%80%9A%E7%94%A8%E8%AF%B4%E6%98%8E%E4%B9%A6%5B%E4%B8%AD%E6%96%87%E7%94%B5%E5%AD%90%E7%89%88%5DPDF.pdf"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Instruction Manual (Chinese) (click to download)</font></font></a></p></li><li><p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">2: Instruction Manual (EN)</font></font></p></li><li><p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">3: </font></font><a target="_self" rel="noopener noreferrer nofollow" href="https://diym.vip/upload/XGCLock.zip"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">PC client software (click to download)</font></font></a></p></li><li><p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">4: </font></font><a target="_self" rel="noopener noreferrer nofollow" href="https://diym.vip/upload/app-release.apk"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">XG Clock (Android client) (click to download)</font></font></a></p></li><li><p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Scan the QR code or search for the mini program "XG Clock" on WeChat</font></font></p><p><img loading="lazy" src="./Nixie Tube Clock Documentation - Acorn Workshop_files/微信图片_20231208112837.jpg" alt="WeChat picture_20231208112837.jpg" width="50%" height="auto" style="display: inline-block"></p><p></p></li></ul><h2 style="text-align: start" id="heading-5"><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">【V2】Clock Features</font></font></strong></h2><h3 id="heading-6"><img loading="lazy" src="./Nixie Tube Clock Documentation - Acorn Workshop_files/IN12-1406Mv2.0图.png" alt="IN12-1406Mv2.0.png" width="100%" height="100%" style="display: inline-block"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Release date: October 2020</font></font></h3><p style="text-align: start"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">This clock is the second generation of Nixie tube clock I made. Compared with the previous generation, it supports voice broadcast, brightness adjustment, and for the first time supports Bluetooth control. You can use WeChat applet and Android APP to operate the clock, and the clock setting is more intuitive; it uses a more efficient and stable high-voltage drive circuit and a brand-new drive circuit.</font></font></p><p style="text-align: start"><u><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Applicable clocks: IN1406M, IN1206M, IN1404M, IN1204M, IN0806M, IN1806M Bluetooth version (Guoran APP)</font></font></u></p><h4 id="heading-7"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">The clock has the following features:</font></font></h4><ul><li><p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">1: Adopting former Soviet Union IN14 Nixie tube, long life and good display effect</font></font></p></li><li><p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">2: Bluetooth applet/Android APP is easy to operate and can quickly calibrate the time</font></font></p></li><li><p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">3: Three-touch button</font></font></p></li><li><p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">4: Multi-function 14-button infrared remote control</font></font></p></li><li><p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">5: Brightness 10 levels of adjustment, manual automatic adjustment</font></font></p></li><li><p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">6: Voice broadcast</font></font></p></li><li><p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">7: RGB multi-mode color backlight</font></font></p></li><li><p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">8: High-precision clock IC, accurate timekeeping</font></font></p></li><li><p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">9: External high-precision temperature sensor</font></font></p></li><li><p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">10: Black walnut solid wood integrated CNC molded shell</font></font></p></li></ul><h4 id="heading-8"><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Information Sharing</font></font></strong></h4><ul><li><p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">1: </font></font><a target="_blank" rel="noopener noreferrer nofollow" href="https://diym.vip/upload/%E6%9C%A8%E9%99%86%E6%97%B6%E9%92%9F_%E8%93%9D%E7%89%99%E7%89%88%E9%80%9A%E7%94%A8%E8%AF%B4%E6%98%8E%E4%B9%A6.pdf"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Instruction Manual (6-digit Nixie tube) (Chinese)</font></font></a></p></li><li><p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">2: </font></font><a target="_self" rel="noopener noreferrer nofollow" href="https://diym.vip/upload/IN1406M_IN1206M_BLE_EN.doc"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">User Manual (6-digit Nixie tube) (English)</font></font></a></p></li><li><p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">3: </font></font><a target="_self" rel="noopener noreferrer nofollow" href="https://diym.vip/upload/%E6%9C%A8%E8%82%86%E6%97%B6%E9%92%9F_%E8%93%9D%E7%89%99%E7%89%88%E9%80%9A%E7%94%A8%E8%AF%B4%E6%98%8E%E4%B9%A6.pdf"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Instruction Manual (4-digit Nixie tube) (Chinese)</font></font></a></p></li><li><p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">4: </font></font><a target="_self" rel="noopener noreferrer nofollow" href="https://diym.vip/upload/IN1404M_IN1204M_BLE_EN.pdf"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Instruction Manual (4-digit Nixie tube) (English)</font></font></a></p></li><li><p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">5. </font></font><a target="_self" rel="noopener noreferrer nofollow" href="https://diym.vip/upload/guoran.apk"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Sure enough, APP (Android version)</font></font></a></p></li><li><p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Scan to get the "Guoran APP" (WeChat applet/Android app)</font></font></p><p><img loading="lazy" src="./Nixie Tube Clock Documentation - Acorn Workshop_files/guoran_wx.png" alt="guoran_wx.png" width="50%" height="auto" style="display: inline-block"><img loading="lazy" src="./Nixie Tube Clock Documentation - Acorn Workshop_files/guoran.png" alt="guoran.png" width="50%" height="auto" style="display: inline-block"></p></li></ul><h1 style="text-align: start" id="heading-9"><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">【V1】Version Clock Usage Instructions</font></font></strong></h1><h3 id="heading-10"><img loading="lazy" src="./Nixie Tube Clock Documentation - Acorn Workshop_files/IN14-12Mv1.0.jpg" alt="IN14-12Mv1.0.jpg" width="100%" height="100%" style="display: inline-block"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Release date: December 2016 M4 version, August 2017 M6 "sensor switch version"</font></font></h3><p style="text-align: start"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">This clock is the first generation of Nixie tube clocks I made. The in4 version was released in 2016, and the in14|in12 version was released in 2017. The clock uses a CNC integrated solid wood base, and is the first to use 5V efficient and stable high-voltage drive circuit, patented induction switch function, etc. With many innovations, it provides a very good user experience.</font></font></p><p style="text-align: start"><u><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Applicable clock: M4 (IN4), M6 (IN14/IN12) induction switch version</font></font></u></p><h4 id="heading-11"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">The clock has the following features:</font></font></h4><ul><li><p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">1: Adopting former Soviet Union IN14/IN12/IN4 Nixie tube, long life and good display effect</font></font></p></li><li><p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">2: The clock has a built-in sensor switch function</font></font></p></li><li><p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">3: Three-touch button</font></font></p></li><li><p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">4: Three-button infrared remote control</font></font></p></li><li><p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">5: Buzzer operation prompt tone</font></font></p></li><li><p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">7: RGB multi-mode color backlight</font></font></p></li><li><p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">8: High-precision clock IC, accurate timekeeping</font></font></p></li><li><p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">9: Black walnut solid wood integrated CNC molded shell</font></font></p></li><li><p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">10: High-precision temperature sensor</font></font></p><p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">(The above is a brief introduction to the IN14/12 clock function)</font></font></p></li></ul><h4 id="heading-12"><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Information Sharing</font></font></strong></h4><ul><li><p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">1: </font></font><a target="_self" rel="noopener noreferrer nofollow" href="https://diym.vip/upload/%E6%9C%A8%E8%82%86%E6%97%B6%E9%92%9F%E6%93%8D%E4%BD%9C%E6%89%8B%E5%86%8C.pdf"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">IN4 version 4-bit Hui clock (Mu Si)</font></font></a></p></li><li><p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">2: </font></font><a target="_self" rel="noopener noreferrer nofollow" href="https://diym.vip/upload/%E6%9C%A8%E9%99%86%E8%AF%B4%E6%98%8E%E4%B9%A6%E6%96%B0.pdf"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">IN14/IN12 six-digit clock (wooden) induction switch version</font></font></a></p></li></ul><h2 style="text-align: start" id="heading-13"><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">How to buy</font></font></strong></h2><ul><li><p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">1: </font></font><a target="_self" rel="noopener noreferrer nofollow" href="https://item.taobao.com/item.htm?spm=a1z10.3-c-s.w4002-23191561728.10.a5264c32TMgOVu&amp;id=547519558078"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Taobao store</font></font></a></p></li></ul><p style="text-align: start"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">This is my only store, thank you for your support. If you have any unsolvable problems during use, please contact me.</font></font></p><blockquote><p><strong><em><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Here, I just share my production and documentation with you!</font></font></em></strong></p></blockquote></article>
+      <div class="mt-10 flex flex-col sm:flex-row sm:justify-between">
+        <div class="flex justify-start">
+          
+        </div>
+        <div class="flex justify-end">
+          <a role="navigation" class="group inline-flex items-center gap-2 truncate text-sm text-gray-600 hover:text-gray-900 dark:text-slate-100 dark:hover:text-slate-200" href="https://diym.vip/archives/1406v2%E8%AF%B4%E6%98%8E%E4%B9%A6" title="Trendy Clock Instructions">
+            <span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Trendy Clock Instructions</font></font></span>
+            <span class="i-tabler-chevron-right -translate-x-1 text-lg transition-all group-hover:translate-x-0"></span>
+          </a>
+        </div>
+      </div>
+      <hr class="my-10 dark:border-slate-700">
+      <!-- https://github.com/halo-sigs/plugin-comment-widget -->
+      
+    </div>
+
+    
+  
+      </div>
+      
+        
+    <aside class="z-0 col-span-1 hidden h-full flex-col gap-6 sm:flex">
+  
+    
+      
+    <div class="toc-container sticky top-20 z-[5] w-full cursor-pointer rounded-xl bg-white p-3 shadow transition-all duration-500 hover:shadow-md dark:bg-slate-800">
+      <h2 class="inline-flex items-center gap-2 text-base dark:text-slate-50">
+        <span class="i-tabler-list text-lg"></span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+        Table of contents
+      </font></font></h2>
+      <div class="toc mt-2 max-h-64 overflow-auto"><ol class="toc-list space-y-1 dark:border-slate-500"><li class="toc-list-item"><a href="https://diym.vip/archives/%E8%AF%B4%E6%98%8E%E4%B9%A6#heading-1" class="toc-link node-name--H2 group flex items-center justify-between rounded py-1 px-1.5 transition-all hover:bg-gray-100 text-sm opacity-80 dark:hover:bg-slate-700 dark:text-slate-50"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">【V3】Clock Features</font></font></a><ol class="toc-list space-y-1 dark:border-slate-500"><li class="toc-list-item is-active-li"><a href="https://diym.vip/archives/%E8%AF%B4%E6%98%8E%E4%B9%A6#heading-2" class="toc-link node-name--H3 group flex items-center justify-between rounded py-1 px-1.5 transition-all hover:bg-gray-100 text-sm opacity-80 dark:hover:bg-slate-700 dark:text-slate-50 is-active-link"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Release time: August 2023</font></font></a><ol class="toc-list space-y-1 dark:border-slate-500"><li class="toc-list-item"><a href="https://diym.vip/archives/%E8%AF%B4%E6%98%8E%E4%B9%A6#heading-3" class="toc-link node-name--H4 group flex items-center justify-between rounded py-1 px-1.5 transition-all hover:bg-gray-100 text-sm opacity-80 dark:hover:bg-slate-700 dark:text-slate-50"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">The clock has the following features:</font></font></a></li><li class="toc-list-item"><a href="https://diym.vip/archives/%E8%AF%B4%E6%98%8E%E4%B9%A6#heading-4" class="toc-link node-name--H4 group flex items-center justify-between rounded py-1 px-1.5 transition-all hover:bg-gray-100 text-sm opacity-80 dark:hover:bg-slate-700 dark:text-slate-50"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Information Sharing</font></font></a></li></ol></li></ol></li><li class="toc-list-item"><a href="https://diym.vip/archives/%E8%AF%B4%E6%98%8E%E4%B9%A6#heading-5" class="toc-link node-name--H2 group flex items-center justify-between rounded py-1 px-1.5 transition-all hover:bg-gray-100 text-sm opacity-80 dark:hover:bg-slate-700 dark:text-slate-50"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">【V2】Clock Features</font></font></a><ol class="toc-list space-y-1 dark:border-slate-500"><li class="toc-list-item"><a href="https://diym.vip/archives/%E8%AF%B4%E6%98%8E%E4%B9%A6#heading-6" class="toc-link node-name--H3 group flex items-center justify-between rounded py-1 px-1.5 transition-all hover:bg-gray-100 text-sm opacity-80 dark:hover:bg-slate-700 dark:text-slate-50"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Release date: October 2020</font></font></a><ol class="toc-list space-y-1 dark:border-slate-500"><li class="toc-list-item"><a href="https://diym.vip/archives/%E8%AF%B4%E6%98%8E%E4%B9%A6#heading-7" class="toc-link node-name--H4 group flex items-center justify-between rounded py-1 px-1.5 transition-all hover:bg-gray-100 text-sm opacity-80 dark:hover:bg-slate-700 dark:text-slate-50"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">The clock has the following features:</font></font></a></li><li class="toc-list-item"><a href="https://diym.vip/archives/%E8%AF%B4%E6%98%8E%E4%B9%A6#heading-8" class="toc-link node-name--H4 group flex items-center justify-between rounded py-1 px-1.5 transition-all hover:bg-gray-100 text-sm opacity-80 dark:hover:bg-slate-700 dark:text-slate-50"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Information Sharing</font></font></a></li></ol></li></ol></li><li class="toc-list-item"><a href="https://diym.vip/archives/%E8%AF%B4%E6%98%8E%E4%B9%A6#heading-9" class="toc-link node-name--H1 group flex items-center justify-between rounded py-1 px-1.5 transition-all hover:bg-gray-100 text-sm opacity-80 dark:hover:bg-slate-700 dark:text-slate-50"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">【V1】Version Clock Usage Instructions</font></font></a><ol class="toc-list space-y-1 dark:border-slate-500"><li class="toc-list-item"><a href="https://diym.vip/archives/%E8%AF%B4%E6%98%8E%E4%B9%A6#heading-10" class="toc-link node-name--H3 group flex items-center justify-between rounded py-1 px-1.5 transition-all hover:bg-gray-100 text-sm opacity-80 dark:hover:bg-slate-700 dark:text-slate-50"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Release date: December 2016 M4 version, August 2017 M6 "sensor switch version"</font></font></a><ol class="toc-list space-y-1 dark:border-slate-500"><li class="toc-list-item"><a href="https://diym.vip/archives/%E8%AF%B4%E6%98%8E%E4%B9%A6#heading-11" class="toc-link node-name--H4 group flex items-center justify-between rounded py-1 px-1.5 transition-all hover:bg-gray-100 text-sm opacity-80 dark:hover:bg-slate-700 dark:text-slate-50"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">The clock has the following features:</font></font></a></li><li class="toc-list-item"><a href="https://diym.vip/archives/%E8%AF%B4%E6%98%8E%E4%B9%A6#heading-12" class="toc-link node-name--H4 group flex items-center justify-between rounded py-1 px-1.5 transition-all hover:bg-gray-100 text-sm opacity-80 dark:hover:bg-slate-700 dark:text-slate-50"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Information Sharing</font></font></a></li></ol></li><li class="toc-list-item"><a href="https://diym.vip/archives/%E8%AF%B4%E6%98%8E%E4%B9%A6#heading-13" class="toc-link node-name--H2 group flex items-center justify-between rounded py-1 px-1.5 transition-all hover:bg-gray-100 text-sm opacity-80 dark:hover:bg-slate-700 dark:text-slate-50"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">How to buy</font></font></a></li></ol></li></ol></div>
+    </div>
+  
+    
+    
+      <div class="w-full cursor-pointer overflow-hidden rounded-xl bg-white p-3 shadow transition-all duration-500 hover:shadow-md dark:bg-slate-800">
+  <h2 class="inline-flex items-center gap-2 text-base dark:text-slate-50">
+    <span class="i-tabler-stairs-up text-lg text-red-600 dark:text-red-700"></span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+    Popular Articles
+  </font></font></h2>
+  <div>
+    <ul role="list" class="divide-y divide-gray-100 dark:divide-slate-700">
+      <li class="py-3">
+        <div class="flex items-center justify-between">
+          <div class="flex flex-col gap-1">
+            <h3 class="text-sm font-medium line-clamp-2 hover:text-gray-500 hover:underline dark:text-slate-100">
+              <a href="https://diym.vip/archives/%E8%AF%B4%E6%98%8E%E4%B9%A6" title="Nixie Tube Clock Documentation"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Nixie Tube Clock Documentation</font></font></a>
+            </h3>
+            <p class="text-xs tabular-nums text-gray-500 dark:text-slate-400"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Published on 2023-09-05</font></font></p>
+          </div>
+          <div class="inline-flex items-center gap-1 text-xs text-gray-600 dark:text-slate-500">
+            <span class="i-tabler-eye"></span>
+            <span class="tabular-nums"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">2117</font></font></span>
+          </div>
+        </div>
+      </li>
+      <li class="py-3">
+        <div class="flex items-center justify-between">
+          <div class="flex flex-col gap-1">
+            <h3 class="text-sm font-medium line-clamp-2 hover:text-gray-500 hover:underline dark:text-slate-100">
+              <a href="https://diym.vip/archives/1406v2%E8%AF%B4%E6%98%8E%E4%B9%A6" title="Trendy Clock Instructions"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Trendy Clock Instructions</font></font></a>
+            </h3>
+            <p class="text-xs tabular-nums text-gray-500 dark:text-slate-400"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Published on 2023-09-05</font></font></p>
+          </div>
+          <div class="inline-flex items-center gap-1 text-xs text-gray-600 dark:text-slate-500">
+            <span class="i-tabler-eye"></span>
+            <span class="tabular-nums"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">541</font></font></span>
+          </div>
+        </div>
+      </li>
+      <li class="py-3">
+        <div class="flex items-center justify-between">
+          <div class="flex flex-col gap-1">
+            <h3 class="text-sm font-medium line-clamp-2 hover:text-gray-500 hover:underline dark:text-slate-100">
+              <a href="https://diym.vip/archives/1.shi-yong-shuo-ming-fen-xiang" title="Fluorescent Screen Clock Instructions"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Fluorescent Screen Clock Instructions</font></font></a>
+            </h3>
+            <p class="text-xs tabular-nums text-gray-500 dark:text-slate-400"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">2023-09-04 Release</font></font></p>
+          </div>
+          <div class="inline-flex items-center gap-1 text-xs text-gray-600 dark:text-slate-500">
+            <span class="i-tabler-eye"></span>
+            <span class="tabular-nums"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">387</font></font></span>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>
+
+    
+      <div class="w-full cursor-pointer overflow-hidden rounded-xl bg-white p-3 shadow transition-all duration-500 hover:shadow-md dark:bg-slate-800">
+  <h2 class="inline-flex items-center gap-2 text-base dark:text-slate-50">
+    <span class="i-tabler-category text-lg"></span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+    Categories
+  </font></font></h2>
+  <div class="mt-2">
+    <ul class="space-y-1">
+      <li>
+    <a href="https://diym.vip/categories/default" title="Default Category" class="group flex items-center justify-between rounded py-1 px-1.5 transition-all hover:bg-gray-100 dark:hover:bg-slate-700">
+      <span class="text-sm opacity-80 dark:text-slate-50"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Default Category</font></font></span>
+      <span class="rounded bg-gray-100 py-0.5 px-1 text-xs tabular-nums opacity-70 group-hover:bg-white dark:bg-slate-600 dark:text-slate-50 dark:group-hover:bg-slate-500"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">3</font></font></span>
+    </a>
+    
+  </li>
+    </ul>
+  </div>
+</div>
+
+    
+      <div class="w-full cursor-pointer overflow-hidden rounded-xl bg-white p-3 shadow transition-all duration-500 hover:shadow-md dark:bg-slate-800">
+  <div class="flex items-center justify-between">
+    <h2 class="inline-flex items-center gap-2 text-base dark:text-slate-50">
+      <span class="i-tabler-tags text-lg"></span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+      Label
+    </font></font></h2>
+    <a class="group inline-flex items-center gap-2 text-sm text-gray-600 transition-all hover:text-gray-900 dark:text-slate-400 dark:hover:text-slate-300" href="https://diym.vip/tags">
+      <span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">More</font></font></span>
+      <span class="i-tabler-chevron-right -translate-x-1 text-lg transition-all group-hover:translate-x-0"></span>
+    </a>
+  </div>
+  <div class="mt-2 flex flex-wrap gap-2">
+    <a href="https://diym.vip/tags/halo" title="Halo" class="rounded bg-gray-100 px-1 py-0.5 text-sm text-gray-900 hover:bg-gray-200 dark:bg-slate-600 dark:text-slate-50 dark:hover:bg-slate-700 dark:hover:text-slate-100"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+      #Halo
+       </font></font><sup><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">0</font></font></sup>
+    </a>
+  </div>
+</div>
+
+    
+  
+</aside>
+  
+      
+      
+    </section>
+    <footer class="mt-10 bg-white py-8 dark:bg-slate-800">
+  <div class="container mx-auto sm:flex sm:items-center sm:justify-between">
+    <a href="https://diym.vip/" class="mb-4 flex items-center justify-center sm:mb-0 sm:justify-start">
+      
+      <span class="self-center whitespace-nowrap text-2xl font-semibold dark:text-slate-50"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Acorn Workshop</font></font></span>
+    </a>
+    
+
+    <div class="mt-4 flex justify-center space-x-6 sm:mt-0">
+  
+</div>
+
+  </div>
+  <hr class="my-6 border-gray-100 dark:border-slate-700 sm:mx-auto lg:my-8">
+  <div class="space-y-1">
+    <span class="container mx-auto block text-center text-sm text-gray-500">
+      <a href="https://beian.miit.gov.cn/" class="hover:underline" target="_blank"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Henan ICP No. 19045740</font></font></a>
+    </span>
+    
+    <span class="container mx-auto block text-center text-sm text-gray-500 dark:text-slate-300"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+      © 2025
+       </font></font><a href="https://diym.vip/" class="hover:underline"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Acorn Workshop</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> . All Rights Reserved. Powered by
+       </font></font><a href="https://halo.run/" class="hover:underline" target="_blank"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Halo</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> .
+    </font></font></span>
+    <span class="container mx-auto block text-center text-sm text-gray-500 dark:text-slate-300">
+      
+    </span>
+  </div>
+</footer>
+
+
+
+    
+      
+    <script>
+      main.generateToc();
+    </script><div id="goog-gt-tt" class="VIpgJd-yAWNEb-L7lbkb skiptranslate" style="border-radius: 12px; margin: 0 0 0 -23px; padding: 0; font-family: &#39;Google Sans&#39;, Arial, sans-serif;" data-id=""><div id="goog-gt-vt" class="VIpgJd-yAWNEb-hvhgNd"><div class=" VIpgJd-yAWNEb-hvhgNd-l4eHX-i3jM8c"><img src="./Nixie Tube Clock Documentation - Acorn Workshop_files/24px.svg" width="24" height="24" alt=""></div><div class=" VIpgJd-yAWNEb-hvhgNd-k77Iif-i3jM8c"><div class="VIpgJd-yAWNEb-hvhgNd-IuizWc" dir="ltr">Original text</div><div id="goog-gt-original-text" class="VIpgJd-yAWNEb-nVMfcd-fmcmS VIpgJd-yAWNEb-hvhgNd-axAV1"></div></div><div class="VIpgJd-yAWNEb-hvhgNd-N7Eqid ltr"><div class="VIpgJd-yAWNEb-hvhgNd-N7Eqid-B7I4Od ltr" dir="ltr"><div class="VIpgJd-yAWNEb-hvhgNd-UTujCb">Rate this translation</div><div class="VIpgJd-yAWNEb-hvhgNd-eO9mKe">Your feedback will be used to help improve Google Translate</div></div><div class="VIpgJd-yAWNEb-hvhgNd-xgov5 ltr"><button id="goog-gt-thumbUpButton" type="button" class="VIpgJd-yAWNEb-hvhgNd-bgm6sf" title="Good translation" aria-label="Good translation" aria-pressed="false"><span id="goog-gt-thumbUpIcon"><svg width="24" height="24" viewBox="0 0 24 24" focusable="false" class="VIpgJd-yAWNEb-hvhgNd-THI6Vb NMm5M"><path d="M21 7h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 0S7.08 6.85 7 7H2v13h16c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73V9c0-1.1-.9-2-2-2zM7 18H4V9h3v9zm14-7l-3 7H9V8l4.34-4.34L12 9h9v2z"></path></svg></span><span id="goog-gt-thumbUpIconFilled"><svg width="24" height="24" viewBox="0 0 24 24" focusable="false" class="VIpgJd-yAWNEb-hvhgNd-THI6Vb NMm5M"><path d="M21 7h-6.31l.95-4.57.03-.32c0-.41-.17-.79-.44-1.06L14.17 0S7.08 6.85 7 7v13h11c.83 0 1.54-.5 1.84-1.22l3.02-7.05c.09-.23.14-.47.14-.73V9c0-1.1-.9-2-2-2zM5 7H1v13h4V7z"></path></svg></span></button><button id="goog-gt-thumbDownButton" type="button" class="VIpgJd-yAWNEb-hvhgNd-bgm6sf" title="Poor translation" aria-label="Poor translation" aria-pressed="false"><span id="goog-gt-thumbDownIcon"><svg width="24" height="24" viewBox="0 0 24 24" focusable="false" class="VIpgJd-yAWNEb-hvhgNd-THI6Vb NMm5M"><path d="M3 17h6.31l-.95 4.57-.03.32c0 .41.17.79.44 1.06L9.83 24s7.09-6.85 7.17-7h5V4H6c-.83 0-1.54.5-1.84 1.22l-3.02 7.05c-.09.23-.14.47-.14.73v2c0 1.1.9 2 2 2zM17 6h3v9h-3V6zM3 13l3-7h9v10l-4.34 4.34L12 15H3v-2z"></path></svg></span><span id="goog-gt-thumbDownIconFilled"><svg width="24" height="24" viewBox="0 0 24 24" focusable="false" class="VIpgJd-yAWNEb-hvhgNd-THI6Vb NMm5M"><path d="M3 17h6.31l-.95 4.57-.03.32c0 .41.17.79.44 1.06L9.83 24s7.09-6.85 7.17-7V4H6c-.83 0-1.54.5-1.84 1.22l-3.02 7.05c-.09.23-.14.47-.14.73v2c0 1.1.9 2 2 2zm16 0h4V4h-4v13z"></path></svg></span></button></div></div><div id="goog-gt-votingHiddenPane" class="VIpgJd-yAWNEb-hvhgNd-aXYTce"><form id="goog-gt-votingForm" action="https://translate.googleapis.com/translate_voting?client=te_lib" method="post" target="votingFrame" class="VIpgJd-yAWNEb-hvhgNd-aXYTce"><input type="text" name="sl" id="goog-gt-votingInputSrcLang"><input type="text" name="tl" id="goog-gt-votingInputTrgLang"><input type="text" name="query" id="goog-gt-votingInputSrcText"><input type="text" name="gtrans" id="goog-gt-votingInputTrgText"><input type="text" name="vote" id="goog-gt-votingInputVote"></form><iframe name="votingFrame" frameborder="0" src="./Nixie Tube Clock Documentation - Acorn Workshop_files/saved_resource.html"></iframe></div></div></div>
+  
+    
+  
+
+</body></html>

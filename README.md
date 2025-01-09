@@ -2,6 +2,8 @@
 
 This repository contians a mirror and some basic English instructions for setting the time on the Keebmonkey IN14 Walnut Clock which was sold on Drop.com in 2024. 
 
+![alt text](/images/IN1406Mv3.jpg "IN1406v3 Clock")
+
 The clock does not come with English instructions and it is really not very obvious how to configure the clock and set the time. 
 
 This archive includes some basic English instructions and a mirror of the Acorn Workshop website which contained the software and Chinese instructions for configuring the clock. 
@@ -36,10 +38,13 @@ There appears to be four main ways to configure the clock:
 4. Some variations of the clock include a remote for setting the time. This clock may support the remote but this has not been tested. 
 
 ## Archive Contents 
-- Manual: original Chinese manual. 
-- PC Client Software: XGClock software used to configure the clock from a Windows Machine (not tested by myself). 
-- XG Clock Android: 
-
+- Manual: original Chinese manual.
+  - [Chinese Original Manual](manual/IN1406Mv3.0%E6%97%B6%E9%92%9F%E6%84%9F%E5%BA%94%E7%89%88%E9%80%9A%E7%94%A8%E8%AF%B4%E6%98%8E%E4%B9%A6%5B%E4%B8%AD%E6%96%87%E7%94%B5%E5%AD%90%E7%89%88%5DPDF.pdf)
+- PC Client Software: XGClock software used to configure the clock from a Windows Machine (not tested by myself).
+  - [XGClock PC Client.zip](pc-client/XGCLock.zip)
+- XG Clock Android: android app for controlling the clock.
+  - [XGClock Android Client APK](android-client/app-release.apk)
+ 
 ## To-do & Future Scope: 
 The following list of items would be nice-to-have additions for the future: 
 - Fully translated Chinese to English Manual
@@ -48,6 +53,10 @@ The following list of items would be nice-to-have additions for the future:
 
 ## Contributing
 If you want to raise any changes to this documentation or make improvements, please feel free to raise a PR request and I will review/accept changes accordingly. 
+
+## Disclaimer and Copyright
+The files inside this repository were not created by myself and I am not the manufacturer or designer of the clock. Please refer to the original supplier/manufacturer for questions and issues. 
+This repository mostly serves as an archive incase the original website and files are lost. 
 
 ## Useful Links
 - Original Drop.com Item Link: https://drop.com/buy/keebmonkey-in14-walnut-nixie-clock-with-driver/talk
